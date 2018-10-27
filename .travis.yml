@@ -1,7 +1,6 @@
 branches:
   only:
   - master
-  - frontend_test
 
 language: node_js
 
