@@ -3,7 +3,16 @@ branches:
   - master
 
 language: node_js
-
+dist: trusty
 sudo: required
+before_install:
+   - export DISPLAY=:99.0
+   - sh -e /etc/init.d/xvfb start
+   - sleep 3 # give xvfb some time to start
+   - npm install -g protractor
+   - webdriver-manager update
+addons:
+  chrome: stable
+
 
 script: sh build.sh
