@@ -9,7 +9,7 @@ if [[ "$?" -ne 0 ]] ; then
 fi
 cp lib/*.jar target/zenvisage/WEB-INF/lib/.
 
-sh run.sh
+sudo sh run.sh
 sleep 10 # give zenvisage some time to start
 cd src/main/webapp
 webdriver-manager start
