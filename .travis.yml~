@@ -22,7 +22,8 @@ addons:
 before_script:
    - psql -c "ALTER USER postgres WITH PASSWORD 'zenvisage';" -U postgres 
    - psql -c "ALTER USER postgres WITH SUPERUSER;" -U postgres
-   - psql -c "DROP schema public cascade;" -U postgres 
+   - psql -c "DROP schema public cascade;" -U postgres
+   - psql -c "CREATE schema public;" -U postgres 
    - psql -c "CREATE TABLE zenvisage_metafilelocation (database TEXT, metafilelocation TEXT, csvfilelocation TEXT);" -U postgres
    - psql -c "CREATE TABLE zenvisage_metatable (tablename TEXT, attribute TEXT, type TEXT, axis TEXT, min FLOAT, max FLOAT, selectedX BOOLEAN, selectedY BOOLEAN, selectedZ BOOLEAN);" -U postgres
    - psql -c "CREATE TABLE zenvisage_dynamic_classes (tablename TEXT, attribute TEXT, ranges TEXT);" -U postgres
