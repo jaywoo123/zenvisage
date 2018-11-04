@@ -5,7 +5,8 @@ exports.config = {
   capabilities: {'browserName': 'chrome', 
 		'acceptInsecureCerts': true,
     		'chromeOptions': {
-      			args: ['--disable-browser-side-navigation'] 
+      			args:["--headless", "--disable-gpu", "window-size=1920, 1080", "--disable-browser-side-navigation"]
+
     		} 
 	},
   getPageTimeout: 30000,
