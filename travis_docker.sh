@@ -2,8 +2,7 @@
 #cd docker
 #docker-compose up &
  # give zenvisage some time to start
-sleep 100
-cd .. 
+sleep 100 
 #sh scripts/run-test.sh
 #start selenium and protractor 
 cd src/main/webapp/test
