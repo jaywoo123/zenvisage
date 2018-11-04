@@ -3,9 +3,8 @@ cd docker
 docker-compose up &
  # give zenvisage some time to start
 sleep 50
-sh scripts/run-test.sh
 cd .. 
-
+sh scripts/run-test.sh
 #start selenium and protractor 
 cd src/main/webapp/test
 npx webdriver-manager update --gecko=false
