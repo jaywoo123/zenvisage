@@ -1,6 +1,4 @@
 #sh scripts/run-test.sh
-#cd docker
-#docker-compose up &
  # give zenvisage some time to start
 sleep 100 
 sh scripts/run-test.sh
