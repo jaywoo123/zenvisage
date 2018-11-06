@@ -34,5 +34,5 @@ before_script:
    - cd docker
    - docker-compose up &
    - cd ..
-script: sh travis_docker.sh
+script: bash run.sh
 
