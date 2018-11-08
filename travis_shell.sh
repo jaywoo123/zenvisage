@@ -21,7 +21,7 @@ find target/classes/data -type f -exec chmod 666 {} \;
 ls target/classes/
  
 echo 'test3'
-sh run.sh
+bash run.sh
  # give zenvisage some time to start
 sleep 10
 
